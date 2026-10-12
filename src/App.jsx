@@ -4,6 +4,7 @@ import Footer from './widgets/footer/Footer.jsx';
 import Homepage from './pages/homepage/Homepage.jsx';
 import './App.css';
 
+
 export default function App() {
   return (
     <>
