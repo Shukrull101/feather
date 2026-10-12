@@ -1,6 +1,13 @@
 
 import React, { useState } from 'react';
 import './Footer.css';
+import emailImg from "../../shared/assets/email.png";
+import pinterest from "../../shared/assets/pinterest.png";
+import twitter from "../../shared/assets/twitter.png";
+import facebook from "../../shared/assets/facebook.png";
+import inImg from "../../shared/assets/in.png";
+import instagram from "../../shared/assets/instagram.png"
+
 
 const groups = [
   {
@@ -82,47 +89,67 @@ export default function Footer() {
           <h3>FEATHER ON SOCIAL MEDIA</h3>
 
           <div className="social-links">
+            
             <a
-              href="mailto:hello@livefeather.com"
+              href="#"
               aria-label="Email"
+              
             >
-              ✉
+               <img src={emailImg} alt="Residential furniture setup" />
             </a>
+           
+
+              <a
+              href="#"
+              aria-label="Email"
+              
+            >
+               <img src={pinterest} alt="Residential furniture setup" />
+            </a>
+           
+           
+
+ <a
+              href="#"
+              aria-label="Email"
+              
+            >
+               <img src={twitter} alt="Residential furniture setup" />
+            </a>
+
+
+           <a
+              href="#"
+              aria-label="Email"
+              
+            >
+               <img src={instagram} alt="Residential furniture setup" />
+            </a>
+
+
+
+
+           <a
+              href="#"
+              aria-label="Email"
+              
+            >
+               <img src={inImg} alt="Residential furniture setup" />
+            </a>
+
+
+
+           
             <a
-              href="https://pinterest.com"
-              aria-label="Pinterest"
-              className="social-letter"
+              href="#"
+              aria-label="Email"
+              
             >
-              p
+               <img src={facebook} alt="Residential furniture setup" />
             </a>
-            <a
-              href="https://twitter.com"
-              aria-label="Twitter"
-              className="social-letter"
-            >
-              𝕏
-            </a>
-            <a
-              href="https://instagram.com"
-              aria-label="Instagram"
-              className="social-letter"
-            >
-              ◎
-            </a>
-            <a
-              href="https://linkedin.com"
-              aria-label="LinkedIn"
-              className="social-letter"
-            >
-              in
-            </a>
-            <a
-              href="https://facebook.com"
-              aria-label="Facebook"
-              className="social-letter"
-            >
-              f
-            </a>
+
+
+
           </div>
 
           <h3 className="newsletter-title">
