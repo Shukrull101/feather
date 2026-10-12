@@ -1,16 +1,84 @@
-# React + Vite
+Feather — лендинг сервиса аренды и продажи мебели
+Адаптивный одностраничный сайт, вдохновлённый сервисом Feather. Проект создан с использованием React, Vite, JavaScript/JSX и CSS.
+Возможности
+- Адаптивная вёрстка для компьютеров, планшетов и мобильных устройств
+- Фиксированная шапка сайта с мобильным меню
+- Главный экран Hero и карточки комнат
+- Блок с миссией компании и промоблоки
+- Карточки популярных товаров
+- Баннер коллаборации Feather × Floyd
+- Горизонтально прокручиваемый блок отзывов
+- Секция с логотипами СМИ
+- Финальный призыв к действию
+- Футер с навигацией и ссылками на социальные сети
+- Панель поиска и модальное окно проверки ZIP-кода доставки
+- Демонстрационное добавление товаров в корзину
+- Проверка email в форме подписки на рассылку
+- Плавная прокрутка к разделам сайта и эффекты при наведении
+Используемые технологии
+- React 18
+- Vite
+- JavaScript / JSX
+- CSS
+- Lucide React — библиотека иконок
+Установка и запуск
+1. Установите Node.js
+Скачайте актуальную LTS-версию с официального сайта: nodejs.org.
+2. Откройте проект
+Скачайте или клонируйте репозиторий, затем откройте корневую папку проекта в VS Code.
+3. Установите зависимости
+В терминале выполните:
+npm install
+4. Запустите проект
+npm run dev
+Откройте адрес, который появится в терминале. Обычно Vite использует http://localhost:5173.
+5. Соберите проект для публикации
+npm run build
+Чтобы посмотреть production-сборку локально, выполните:
+npm run preview
+Структура проекта
+feather-react/
+├── public/
+├── src/
+│   ├── widgets/
+│   │   ├── header/
+│   │   │   ├── Header.jsx
+│   │   │   └── Header.css
+│   │   └── footer/
+│   │       ├── Footer.jsx
+│   │       └── Footer.css
+│   ├── pages/
+│   │   └── homepage/
+│   │       ├── Homepage.jsx
+│   │       ├── Homepage.css
+│   │       └── sections/
+│   │           ├── Hero.jsx
+│   │           ├── ShopByRoom.jsx
+│   │           ├── Mission.jsx
+│   │           ├── PromoSections.jsx
+│   │           ├── Bestsellers.jsx
+│   │           ├── FloydBanner.jsx
+│   │           ├── Reviews.jsx
+│   │           ├── PressSection.jsx
+│   │           ├── FinalCTA.jsx
+│   │           └── sections.css
+│   ├── App.jsx
+│   ├── App.css
+│   ├── index.css
+│   └── main.jsx
+├── index.html
+└── package.json
+Важные замечания
+- Header и Footer — переиспользуемые компоненты, расположенные в src/widgets/.
+- Главная страница собрана из отдельных JSX-компонентов в src/pages/homepage/sections/.
+- Корзина и подписка работают на стороне браузера. Сервер и база данных не подключены.
+- Названия товаров, цены, отзывы и логотипы СМИ используются как демонстрационное содержимое.
+Команды проекта
+Команда	Назначение
+npm install	Установить зависимости
+npm run dev	Запустить проект в режиме разработки
+npm run build	Собрать проект для публикации
+npm run preview	Просмотреть production-сборку
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+Учебный frontend-проект на React и Vite.
